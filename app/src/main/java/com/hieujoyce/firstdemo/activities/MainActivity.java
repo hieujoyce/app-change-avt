@@ -185,6 +185,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         switch (i) {
                             case DialogInterface.BUTTON_POSITIVE:
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
                                 callDeleteAvt(avtListAdapter.selectedPosition, avtListAdapter.data.get(avtListAdapter.selectedPosition).id);
                                 break;
                             case DialogInterface.BUTTON_NEGATIVE:
@@ -214,7 +218,10 @@ public class MainActivity extends AppCompatActivity {
         ApiService.apiService.deleteAvt(id).enqueue(new Callback<ResponseGetListAvt>() {
             @Override
             public void onResponse(Call<ResponseGetListAvt> call, Response<ResponseGetListAvt> response) {
+<<<<<<< HEAD
                 binding.txtCoutAvt.setText("Ảnh (" + (avtListAdapter.data.size() - 1) + ")");
+=======
+>>>>>>> origin/master
                 avtListAdapter.removeAt(po);
                 mLoadingDialog.cancel();
             }
