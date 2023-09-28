@@ -218,10 +218,7 @@ public class MainActivity extends AppCompatActivity {
         ApiService.apiService.deleteAvt(id).enqueue(new Callback<ResponseGetListAvt>() {
             @Override
             public void onResponse(Call<ResponseGetListAvt> call, Response<ResponseGetListAvt> response) {
-<<<<<<< HEAD
                 binding.txtCoutAvt.setText("Ảnh (" + (avtListAdapter.data.size() - 1) + ")");
-=======
->>>>>>> origin/master
                 avtListAdapter.removeAt(po);
                 mLoadingDialog.cancel();
             }
