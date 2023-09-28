@@ -185,10 +185,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         switch (i) {
                             case DialogInterface.BUTTON_POSITIVE:
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
                                 callDeleteAvt(avtListAdapter.selectedPosition, avtListAdapter.data.get(avtListAdapter.selectedPosition).id);
                                 break;
                             case DialogInterface.BUTTON_NEGATIVE:
